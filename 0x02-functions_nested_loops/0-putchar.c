@@ -1,17 +1,19 @@
-#include<stdio.h>
-
-void print_alphabet(void);
+#include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - print _putchar
+ * Return: 0
  */
+
 int main(void)
 {
-	print_alphabet();
-	return (0);
-}
-void print_alphabet(void)
-{
-	printf("_putchar\n");
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
