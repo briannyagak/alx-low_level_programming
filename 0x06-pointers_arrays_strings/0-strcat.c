@@ -8,7 +8,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int len1, len2, i;
+	int len1 = 0;
+	int len2 = 0;
+	int i;
 
 	while (*dest != '\0')
 	{
@@ -20,12 +22,11 @@ char *_strcat(char *dest, char *src)
 		len2++;
 		src++;
 	}
-	len1++;
-	len2++;
 	for (i = 0; i < len2; i++)
 	{
 		dest[len1 + i] = src[i];
+		i++;
 	}
-	dest[i] = '\0';
+	dest[len1 + i] = '\0';
 	return (dest);
 }
